@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> FirstName </p><input id="biddut" type="text">
+    <p> LastName </p><input id="current" type="text">
+    <button onclick="myFunction()">Click</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function myFunction(){
+          let firstName = document.getElementById("biddut").value
+           let lastName = document.getElementById("current").value
+            document.getElementById("demo").innerHTML = firstName + " " + lastName;
+            document.getElementById("demo1").innerHTML = firstName + lastName;
+        }
+    </script>
+</body>
+</html>
